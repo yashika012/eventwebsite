@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    background-image: url('./assets/images/Hero.png');
+    background-size: cover;
+}
+
