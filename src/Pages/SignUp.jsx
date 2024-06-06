@@ -1,10 +1,13 @@
 import React from 'react'
 import { RxCross1 } from "react-icons/rx";
 import { IoEyeSharp } from "react-icons/io5";
+import Nav from '../components/Nav';
 
 const SignUp = () => {
   return (
-         <section className='w-full min-h-screen bg-sign flex pt-20'>
+    <>
+    <Nav/>
+    <section className='w-full min-h-screen bg-sign flex pt-20'>
         <div className='flex flex-col gap-32 sm:pl-5 pl-1 pt-5'>
             {/* <h1 className='text-heading sm:text-5xl text-3xl font-normal font-lalezar'>Eventify</h1> */}
             <p className='xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-base sm:font-bold font-normal font-montserrat lg:w-[350px] md:w-[200px] sm:w-[150px] w-[50px] text-white leading-tight'>Discover tailored events.
@@ -28,6 +31,7 @@ const SignUp = () => {
         <p className='flex self-start md:pl-32 pl-20  text-text font-normal md:text-xl text-xs'>Already have an account?<span className='text-para'> Log In</span></p>
         </div> 
     </section>
+    </>
   )
 }
 

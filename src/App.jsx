@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import Events from './Pages/Events'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import EventPage from './Pages/EventPage'
 
 const router = createBrowserRouter([
   {
@@ -30,16 +31,18 @@ const router = createBrowserRouter([
     element:<SignIn/>
   },
   {
-    path:'Signup',
+    path:'/Signup',
     element:<SignUp/>
+  },
+  {
+    path:'/event/:id',
+    element:<EventPage/>
   }
 ])
 
 export default function App() {
   return (
-    <div>
-    <Nav/>
     <RouterProvider router={router}/>
-    </div>
   )
 }
+

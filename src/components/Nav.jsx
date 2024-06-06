@@ -17,12 +17,12 @@ const Nav = () => {
     </div>
         <ul className={` text-black font-bold flex w-[200px] h-[400px] md:hidden justify-between flex-col absolute ${show ? "right-0":"right-[-100%]"} duration-500 ease-in-out  top-0 py-10 px-8 rounded-bl-xl bg-heading`}>
       {data.map((data,index)=>(
-          <a href={data.path} key={index}>{data.name}</a>
+          <Link to={data.path} key={index}>{data.name}</Link>
         ))}
     </ul>
     <ul className='hidden w-[550px] md:flex justify-between items-center text-lg'>
       {data.map((data,index)=>(
-          <a href={data.path} key={index}>{data.name}</a>
+          <Link to={data.path} key={index}>{data.name}</Link>
         ))}
     </ul>
       </div>

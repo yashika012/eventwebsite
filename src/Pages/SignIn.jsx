@@ -1,12 +1,15 @@
 import React from 'react'
 import { RxCross1 } from "react-icons/rx";
 import { IoEyeSharp } from "react-icons/io5";
+import Nav from '../components/Nav';
 
 
 
 
 const SignIn = () => {
   return (
+    <>
+    <Nav/>
     <section className='w-full min-h-screen bg-sign flex pt-20'>
         <div className='flex flex-col gap-32 sm:pl-5 pl-1 pt-5'>
             {/* <h1 className='text-heading sm:text-5xl text-3xl font-normal font-lalezar'>Eventify</h1> */}
@@ -29,6 +32,7 @@ const SignIn = () => {
         <p className='flex self-start md:pl-32 pl-20  text-text font-normal md:text-xl text-xs'>Do you have an account?<span className='text-para'>Sign up</span></p>
         </div> 
     </section>
+    </>
   )
 }
 
